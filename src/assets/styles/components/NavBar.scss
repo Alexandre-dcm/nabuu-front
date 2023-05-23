@@ -1,0 +1,35 @@
+@import '../../../SassVariables.scss';
+
+#navbar-main {
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid lightcyan;
+    top: 0;
+    height: $navbarHeight;
+    margin-bottom: $navbarHeight;
+    background-color: $mainColor;
+}
+
+.navbar-links-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+
+    & > .navbar-link {
+        $linkHeightPercentage: 65;
+        $linkHeightPercentageMultiplicator: calc($linkHeightPercentage / 100);
+        height: $linkHeightPercentage + '%';
+        padding: 0 15px;
+        margin: 0 10px;
+        line-height: calc($navbarHeight * $linkHeightPercentageMultiplicator);
+        border-radius: $btnBorderRadius;
+        background-color: $lightBackgroundColor;
+    }
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}

@@ -1,4 +1,4 @@
-import "./HomeSection.css";
+import "../../../assets/styles/components/HomeSection.scss";
 
 type Props = {
     title: string;

@@ -1,17 +1,19 @@
-import './App.css'
-import HomePage from "./pages/HomePage";
-import DocumentationsPage from './pages/DocumentationsPage';
-import LoginPage from './pages/LoginPage';
+import 'bootstrap/dist/css/bootstrap.css';
+import './App.scss'
+import HomePage from "./pages/Home/index";
+import DocumentationsPage from './pages/Documentations/index';
+import LoginPage from './pages/Login/index';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NavBar from './components/Menu/NavBar';
+import NavBar from './components/NavBar';
 
-function App() {
+
+function App(): JSX.Element {
   return (
     <Router>
       <div className='App'>
         <NavBar />
-        <div className="content">
+        <div className="App-content">
           <Switch>
             <Route exact path="/">
               <HomePage/>

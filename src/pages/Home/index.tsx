@@ -1,6 +1,6 @@
-import HomeSection from "../components/Home/HomeSection";
+import HomeSection from "./components/HomeSection";
 
-const HomePage = () => {
+const HomePage = (): JSX.Element => {
     return (
         <HomeSection title='Nabuu !'></HomeSection>
     );
