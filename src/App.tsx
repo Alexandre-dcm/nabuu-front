@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.scss'
 import HomePage from "./pages/Home/index";
 import DocumentationsPage from './pages/Documentations/index';
+import CreateDocumentation from './pages/Documentations/create';
 import LoginPage from './pages/Login/index';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -20,6 +21,9 @@ function App(): JSX.Element {
             </Route>
             <Route exact path="/docs">
               <DocumentationsPage/>
+            </Route>
+            <Route exact path="/docs/create">
+              <CreateDocumentation/>
             </Route>
             <Route exact path="/login">
               <LoginPage/>

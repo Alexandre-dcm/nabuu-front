@@ -1,6 +1,8 @@
 const DocumentationsPage = (): JSX.Element => {
     return (
-        <h1>Documentations !</h1>
+        <div>
+            <h1>Documentations !</h1>
+        </div>
     );
 }
 
